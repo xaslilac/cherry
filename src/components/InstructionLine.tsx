@@ -46,7 +46,7 @@ export function InstructionLine(props: InstructionLineProps) {
 
 	const onChange = useCallback(() => {
 		const instruction = Object.fromEntries(new FormData(ref.current ?? undefined));
-		console.log(is(instruction, $Instruction), instruction);
+		// console.log(is(instruction, $Instruction), instruction);
 		setSavingEnabled(is(instruction, $Instruction));
 	}, []);
 
